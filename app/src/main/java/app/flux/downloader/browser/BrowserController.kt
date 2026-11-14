@@ -77,7 +77,6 @@ class BrowserController(
         """\.(mp4|webm|m3u8|mpd|mp3|m4a|ogg|ts)(?:$|[?#])""",
         RegexOption.IGNORE_CASE
     )
-} {
 
     var webView: WebView? = null
 
@@ -720,7 +719,6 @@ class BrowserController(
         }
     }
 }
-
 
 private val SNIFF_JS = """(function(){
 if(window.__fluxS)return;window.__fluxS=1;
