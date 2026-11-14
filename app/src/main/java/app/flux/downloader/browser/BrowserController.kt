@@ -72,9 +72,12 @@ class BrowserController(
     private val prefs: BrowserPrefs,
     private val store: BrowserStore,
     private val session: BrowserSession,
-    private val mediaRegex =
-    Regex("""\.(mp4|webm|m3u8|mpd|mp3|m4a|ogg|ts)(?:$|[?#])""", RegexOption.IGNORE_CASE),
 ) {
+    private val mediaRegex = Regex(
+        """\.(mp4|webm|m3u8|mpd|mp3|m4a|ogg|ts)(?:$|[?#])""",
+        RegexOption.IGNORE_CASE
+    )
+} {
 
     var webView: WebView? = null
 
